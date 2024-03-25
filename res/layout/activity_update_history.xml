@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    tools:context=".UpdateHistoryActivity">
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:text="This table shows the changes made to the information of the drivers. For clearer view, please rotate the screen."
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/updatesSearchField"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/infoText"
+        android:layout_marginEnd="10dp"
+        android:background="#30ffffff"
+        android:hint="Search Plate Number"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/updatesSearchImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="315dp"
+        android:layout_marginTop="100dp"
+        android:clickable="true"
+        android:src="@drawable/searchicon" />
+
+    <TableLayout
+        android:id="@+id/infoUpdateTable"
+        android:layout_width="fill_parent"
+        android:layout_height="460dp"
+        android:layout_below="@+id/updatesSearchField"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:scrollbarTrackVertical="@color/white"
+        android:background="@android:color/white">
+
+        <TableRow
+            android:id="@+id/headerRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#96c896">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:padding="10sp"
+                android:text="Plate #"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:padding="10sp"
+                android:text="Updated by"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:padding="10sp"
+                android:text="Updated On"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:padding="10sp"
+                android:text="Previous Info"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:padding="10sp"
+                android:text="Updated Info"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/updatesDataTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Your data rows go here -->
+
+            </TableLayout>
+
+        </ScrollView>
+
+    </TableLayout>
+
+</RelativeLayout>

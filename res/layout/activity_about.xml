@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    tools:context=".AboutActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="About the USM Trike Tracker App"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <!-- Second panel -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:text="User Manual"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#FFEB3B"/>
+
+            <TextView
+                android:text="A. Types of Users\n"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="17sp"
+                android:textColor="#FDD835"/>
+
+            <TextView
+                android:text="\t1. Admin - They are responsible for tracking the ride history of all students who use this app. They can also add new trikes and drivers into the system. The admin is also responsible for providing the QR code to every driver they add into the system.\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:text="\t2. Student - They are the users of the app who are limited to enjoy the main features of the app, and have no administrative access on the app. They can scan the QR code in the front of tricycle, track their own ride history, and manage their own profile.\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:text="B. Instructions\n"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#FDD835"/>
+
+            <TextView
+                android:text="1. If you are a first time user of the app, click on the Sign Up button to open the sign up page. Enter all necessary details. Make sure that you provide your active phone number because it is important for your account recovery in case you have a plan of forgetting your username and/or password in the future.\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:text="2. If the registration is successful, you can now login using your newly created username and password. You will be redirected to the student dashboard if you are a student, and to the admin dashboard if your account is for admin.\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:text="\t3. Student: Click on Profile button to see your profile details. You can edit your personal details and save them after editing. Click on Scan button to scan a QR code so that your ride session will be saved. To see all your ride history, click on the Ride History button. There you can see a search bar at the top and a table that contains all your ride sessions. If you want to see all the information of a trike, just type the plate number at the search bar and click on the search button. A pop up message will appear containing all the information associated with the plate number you entered.\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/adminInstruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

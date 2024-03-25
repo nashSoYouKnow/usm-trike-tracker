@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.loginpage.AdminDashboardActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/adminProfileBtn"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:backgroundTint="#FF00FF"
+        android:drawableEnd="@drawable/ic_baseline_art_track_24"
+        android:text="@string/profile"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/studentDashboardScanBtn"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/adminProfileBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#0000FF"
+        android:drawableEnd="@drawable/ic_baseline_person_add_24"
+        android:text="Add Trike driver"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/adminTrikeDriversBtn"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/studentDashboardScanBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00FF00"
+        android:drawableEnd="@drawable/ic_baseline_person_outline_24"
+        android:text="Trike Drivers"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/adminRideHistoryBtn"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/adminTrikeDriversBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFC107"
+        android:drawableEnd="@drawable/ic_baseline_format_list_bulleted_24"
+        android:text="Ride History"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/info"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/adminRideHistoryBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF5722"
+        android:drawableEnd="@drawable/ic_baseline_info_24"
+        android:text="@string/about_the_app"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logOutBtn"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF0000"
+        android:drawableEnd="@drawable/ic_baseline_power_settings_new_24"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

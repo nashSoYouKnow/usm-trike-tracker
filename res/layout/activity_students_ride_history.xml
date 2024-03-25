@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".StudentsRideHistoryActivity">
+
+    <TextView
+        android:id="@+id/filterText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:text="Data Filters"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/filterSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filterText"/>
+
+    <View
+        android:id="@+id/hLine1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="65dp"
+        android:layout_height="2dp"
+        android:background="#81F407" />
+
+    <TextView
+        android:id="@+id/dateFilterText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:text="Date Filters"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@+id/hLine1"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/monthFilterSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateFilterText"
+        />
+
+    <Spinner
+        android:id="@+id/yearFilterSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/hLine1"
+        />
+
+    <View
+        android:id="@+id/hLine2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/monthFilterSpinner"
+        android:background="#81F407" />
+
+    <EditText
+        android:id="@+id/filterInputField"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="150dp"
+        android:background="#30ffffff"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/studentsFilterImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="305dp"
+        android:layout_marginTop="146dp"
+        android:clickable="true"
+        android:src="@drawable/filtericon" />
+
+    <TableLayout
+        android:id="@+id/studentsRideHistoryTable"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/filterInputField"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:scrollbarTrackVertical="@color/white"
+        android:background="@android:color/white">
+
+        <TableRow
+            android:id="@+id/studentsRideHeaderRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#96c896">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:padding="10sp"
+                android:text="Date of Scan"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:padding="10sp"
+                android:text="Student ID"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:padding="10sp"
+                android:text="Plate #"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/studentsRideDataTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Your data rows go here -->
+
+            </TableLayout>
+
+        </ScrollView>
+
+
+    </TableLayout>
+
+</RelativeLayout>

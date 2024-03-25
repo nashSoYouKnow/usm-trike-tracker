@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ScanActivity">
+
+        <SurfaceView
+            android:id="@+id/camera_preview"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"/>
+
+
+    <!--    <TextView-->
+<!--        android:id="@+id/scanDriverNameTxt"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/camera_preview"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:text="Driver:"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:background="@color/white"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textStyle="bold"/>-->
+    <TextView
+        android:id="@+id/dateTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/camera_preview"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Date and time:"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/plateTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateTxt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Plate number:"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/errorTxt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/plateTxt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <ToggleButton
+        android:id="@+id/flashBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plateTxt"
+        android:textOff="Flash Off"
+        android:textOn="Flash On"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/scanSaveBtn"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/flashBtn"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#CC808080"
+        android:text="Save Log"
+        android:textColor="@color/white"
+        android:enabled="false"
+        app:cornerRadius="20dp"
+        android:textSize="24sp" />
+
+    </RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AddTrikeActivity">
+
+    <TextView
+        android:id="@+id/addTrikeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        android:text="Add Trike"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:drawableTopCompat="@drawable/ic_baseline_person_add_24" />
+
+    <ImageView
+        android:id="@+id/appSeal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/addTrikeTitle"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/usm"/>
+
+    <EditText
+        android:id="@+id/addTrikefullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appSeal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="20dp"
+        android:hint="Driver Full Name"
+        android:padding="20dp"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/plateNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addTrikefullName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/baseline_drag_handle_24"
+        android:drawablePadding="20dp"
+        android:hint="Trike Plate Number"
+        android:padding="20dp"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/addTrikeAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plateNumber"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/baseline_home_work_24"
+        android:drawablePadding="20dp"
+        android:hint="Address"
+        android:padding="20dp"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/addTrikePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addTrikeAddress"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="20dp"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:padding="20dp"
+        android:textColorHint="@color/white"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addTrikeSaveBtn"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/addTrikePhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        app:cornerRadius="20dp"
+        android:text="Add"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

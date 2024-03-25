@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">USM Trike Tracker</string>
+    <string name="ride_history">Ride History</string>
+    <string name="scan">Scan</string>
+    <string name="profile">Profile</string>
+    <string name="about_the_app">About The App</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or">or</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="welcome_to_usm_trike_tracker_app">Welcome to USM Trike-tracker App!</string>
+    <string name="nazermalaguia_nazty">NazerMalaguia/nazty</string>
+    <string name="LoginPage">loginpage</string>
+</resources>

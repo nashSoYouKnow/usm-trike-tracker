@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    tools:context=".UpdateDriverInfoActivity">
+
+    <TextView
+        android:id="@+id/addTrikeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        android:text="Update Driver Information"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:drawableTopCompat="@drawable/ic_baseline_assignment_ind_24" />
+
+    <TextView
+        android:id="@+id/selectDriverText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        android:text="Select Driver:"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/addTrikeTitle" />
+
+    <Spinner
+        android:id="@+id/updateDriverSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#04B6B6"
+        android:layout_below="@+id/selectDriverText"/>
+
+    <EditText
+        android:id="@+id/driverNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateDriverSpinner"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="20dp"
+        android:hint="Driver Full Name"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/plateNumberField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/driverNameField"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/baseline_drag_handle_24"
+        android:drawablePadding="20dp"
+        android:hint="Trike Plate Number"
+        android:editable="false"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/addressField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plateNumberField"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/baseline_home_work_24"
+        android:drawablePadding="20dp"
+        android:hint="Address"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/driverPhoneField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressField"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="20dp"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/updateDriverSaveBtn"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/driverPhoneField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFB300"
+        app:cornerRadius="20dp"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>
+</ScrollView>
